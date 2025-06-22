@@ -1,5 +1,4 @@
-const apiURL = "http://localhost:1880/";
-// const home = "http://localhost:5174";
+const apiURL = "https://node-red-production-cc3e.up.railway.app/";
 let data;
 
 export async function consultarCep(cep) {
