@@ -4,10 +4,18 @@ import { useNavigate } from "react-router-dom";
 
 function Cepform() {
   const navigate = useNavigate();
+  const lidarComKeyDownNoInput = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      const button = document.getElementById("btn");
+      button.click();
+    }
+  };
   let [cepName, setCepName] = useState("");
   return (
     <div className="space-y-4 p-6 bg-slate-200 rounded-md shadow flex flex-col">
       <input
+        onKeyDown={lidarComKeyDownNoInput}
         type="text"
         value={cepName}
         placeholder="Digite o CEP (Ex: 29052-225)"
@@ -15,6 +23,7 @@ function Cepform() {
         onChange={(event) => setCepName(event.target.value)}
       ></input>
       <button
+        id="btn"
         onClick={() => {
           if (!cepName.trim()) {
             return alert("Preencha o CEP");
