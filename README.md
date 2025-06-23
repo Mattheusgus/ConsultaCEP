@@ -21,7 +21,7 @@ Para rodar este frontend localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Mattheusgus/ConsultaCEP.git](https://github.com/Mattheusgus/ConsultaCEP.git)
+    git clone https://github.com/Mattheusgus/ConsultaCEP.git
     ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
@@ -34,8 +34,7 @@ Para rodar este frontend localmente, siga os passos abaixo:
     ```
 4.  **Inicie o servidor de desenvolvimento:**
     ```bash
-    npm start
-    # ou yarn start
+    npm run dev
     ```
     O aplicativo estará disponível em `http://localhost:3000` (ou outra porta disponível).
 
@@ -78,7 +77,7 @@ To run this frontend locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Mattheusgus/ConsultaCEP.git](https://github.com/Mattheusgus/ConsultaCEP.git)
+    git clone https://github.com/Mattheusgus/ConsultaCEP.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
@@ -91,8 +90,7 @@ To run this frontend locally, follow these steps:
     ```
 4.  **Start the development server:**
     ```bash
-    npm start
-    # or yarn start
+    npm run dev
     ```
     The application will be available at `http://localhost:3000` (or another available port).
 
